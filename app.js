@@ -1,4 +1,4 @@
-// Array para almacenar los amigos
+// Array para almacenar los nombres de los amigos
 let amigos = [];
 
 // Función para agregar amigos
@@ -18,7 +18,7 @@ function agregarAmigo() {
 
   input.value = "";
 
-   // Función que muestra los amigos en la lista
+   // Función que muestra los amigos disponibles en la lista
   mostrarAmigos();
 }
 
@@ -39,9 +39,9 @@ function mostrarAmigos() {
     lista.appendChild(li);
   }
 }
-//Función para sortear el amigo secreto
+//Función para sortear amigo secreto
 function sortearAmigo() {
-  // Validar que haya amigos disponibles
+  // Validar que hayan nombres de amigos disponibles
   if (amigos.length === 0) {
     alert("No hay amigos en la lista para sortear.");
     return;
